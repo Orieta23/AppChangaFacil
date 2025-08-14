@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales de la app -->
+    <color name="colorPrimary">#0D47A1</color> <!-- Azul oscuro -->
+    <color name="colorPrimaryVariant">#08306B</color> <!-- Azul más oscuro -->
+    <color name="colorSecondary">#64B5F6</color> <!-- Celeste suave -->
+    <color name="colorAccent">#64B5F6</color> <!-- Igual al secundario -->
+
+    <!-- Colores adicionales -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="primaryColor">#2196F3</color>
+    <color name="azulApp">#2196F3</color>
+    <color name="botonAzulClaro">#2196F3</color>
+    <color name="blue_chamba">#2196F3</color>
+    <color name="light_green">#81C784</color>
+
+    <!-- Colores de compatibilidad Material Design -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Grises y colores neutros -->
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#BDBDBD</color>
+    <color name="gray_dark">#757575</color>
+    <color name="gray">#9E9E9E</color>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título de la pantalla -->
+        <TextView
+            android:id="@+id/txtTituloPantalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis Postulaciones"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <!-- Tarjeta de detalle -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="20dp">
+
+            <!-- Título del trabajo -->
+            <TextView
+                android:id="@+id/txtDetalleTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Título del trabajo"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Empresa -->
+            <TextView
+                android:id="@+id/txtDetalleEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏢 Empresa: Rappi"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Ubicación -->
+            <TextView
+                android:id="@+id/txtDetalleUbicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📍 San Miguel"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Fecha -->
+            <TextView
+                android:id="@+id/txtDetalleFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📅 Publicado el 24/07/2025"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Sueldo -->
+            <TextView
+                android:id="@+id/txtDetalleSueldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💰 $150.000"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Descripción -->
+            <TextView
+                android:text="📝 Descripción:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#222222"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/txtDetalleDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet..."
+                android:textSize="15sp"
+                android:textColor="#555555"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+
+        <!-- Botón Ver Perfil del Empleador -->
+        <Button
+            android:id="@+id/btnVerPerfilEmpleador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver perfil del empleador"
+            android:backgroundTint="#004AAD"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botón Calificar Empleador -->
+        <Button
+            android:id="@+id/btnCalificarEmpleador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calificar empleador"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

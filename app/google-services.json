@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1089803588827",
+    "project_id": "chambafacil-ab432",
+    "storage_bucket": "chambafacil-ab432.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089803588827:android:70e240a067b2569b8d68fe",
+        "android_client_info": {
+          "package_name": "com.example.chambafacil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089803588827-rcdhf4cljb5gd8mnk9u5i5e4mp862qa1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chambafacil",
+            "certificate_hash": "888ac59159765f44863f1af4c6a62c6539176919"
+          }
+        },
+        {
+          "client_id": "1089803588827-suumbdbnn4qd3405n2stu8e36vlb2o7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiNxWXLrIDW_mDJkWI7iMldVPUJapn1ig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089803588827-suumbdbnn4qd3405n2stu8e36vlb2o7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_buscar">
+
+    <!-- 🔍 Buscar -->
+    <fragment
+        android:id="@+id/nav_buscar"
+        android:name="com.example.chambafacil.BuscarFragment"
+        android:label="Buscar"
+        tools:layout="@layout/fragment_buscar" />
+
+    <fragment
+        android:id="@+id/detalleTrabajoFragment"
+        android:name="com.example.chambafacil.DetalleTrabajoFragment"
+        android:label="Detalle Trabajo" />
+
+    <!-- 📄 Mis Postulaciones -->
+    <fragment
+        android:id="@+id/nav_postulaciones"
+        android:name="com.example.chambafacil.ui.slideshow.MisPostulacionesFragment"
+        android:label="Mis Postulaciones"
+        tools:layout="@layout/fragment_mis_postulaciones">
+
+        <!-- ✅ Acción agregada para ir al detalle -->
+        <action
+            android:id="@+id/action_nav_postulaciones_to_detallePostulacionFragment"
+            app:destination="@id/detallePostulacionFragment" />
+    </fragment>
+
+    <!-- 👤 Perfil -->
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.chambafacil.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil_empleador" />
+
+    <!-- 🧾 Detalle Postulación (fragmento destino del botón) -->
+    <fragment
+        android:id="@+id/detallePostulacionFragment"
+        android:name="com.example.chambafacil.DetallePostulacionFragment"
+        android:label="Detalle Postulación"
+        tools:layout="@layout/fragment_detalle_postulacion" />
+
+</navigation>

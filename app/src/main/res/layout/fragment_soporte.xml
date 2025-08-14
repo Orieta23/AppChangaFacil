@@ -1,0 +1,52 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayuda y Soporte"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Explicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Tenés dudas o algún problema con la app? Estamos para ayudarte. Podés escribirnos por WhatsApp o enviarnos un correo electrónico y te responderemos lo antes posible."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#333333"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Botón Email -->
+        <Button
+            android:id="@+id/btnContactoEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Email"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón WhatsApp -->
+        <Button
+            android:id="@+id/btnContactoWhatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contactar por WhatsApp"
+            android:backgroundTint="#25D366"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

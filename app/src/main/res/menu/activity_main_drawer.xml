@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_buscar"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Buscar Trabajo" />
+        <item
+            android:id="@+id/nav_ofrecer"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="Ofrecer Servicio" />
+        <item
+            android:id="@+id/nav_ofrecer_trabajo"
+            android:icon="@android:drawable/ic_menu_send"
+            android:title="Ofrecer Servicio" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Mi Perfil" />
+
+        <!-- 🔴 NUEVA OPCIÓN AGREGADA -->
+        <item
+            android:id="@+id/nav_mis_postulaciones"
+            android:icon="@android:drawable/ic_menu_view"
+        android:title="Mis Postulaciones" />
+    </group>
+</menu>

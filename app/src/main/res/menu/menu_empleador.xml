@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Publicar trabajo -->
+    <item
+        android:id="@+id/nav_ofrecer_trabajo"
+        android:icon="@drawable/ic_agregar"
+        android:title="Ofrecer" />
+
+    <!-- Ofertas publicadas -->
+    <item
+        android:id="@+id/nav_mis_ofertas"
+        android:icon="@drawable/ic_listado"
+        android:title="Mis Ofertas" />
+
+    <!-- Perfil del empleador -->
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/ic_user_placeholder"
+        android:title="Perfil" />
+
+</menu>

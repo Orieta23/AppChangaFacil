@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Buscar trabajos -->
+    <item
+        android:id="@+id/nav_buscar"
+        android:icon="@drawable/ic_lupa_centrada"
+        android:title="Buscar" />
+
+    <!-- Mis postulaciones (usa MisPostulacionesFragment) -->
+    <item
+        android:id="@+id/nav_postulaciones"
+        android:icon="@drawable/ic_menu_slideshow"
+        android:title="Mis Postulaciones" />
+
+    <!-- Perfil del usuario (usa PerfilFragment) -->
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/ic_user_placeholder"
+        android:title="Perfil" />
+
+</menu>

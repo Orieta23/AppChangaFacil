@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_ofrecer_trabajo">
+
+    <fragment
+        android:id="@+id/nav_ofrecer_trabajo"
+        android:name="com.example.chambafacil.OfrecerTrabajoFragment"
+        android:label="Ofrecer Trabajo"
+        tools:layout="@layout/fragment_ofrecer_trabajo" />
+
+    <fragment
+        android:id="@+id/nav_mis_ofertas"
+        android:name="com.example.chambafacil.MisOfertasFragment"
+        android:label="Mis Ofertas"
+        tools:layout="@layout/fragment_mis_ofertas" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.chambafacil.PerfilEmpleadorFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil_empleador" />
+</navigation>

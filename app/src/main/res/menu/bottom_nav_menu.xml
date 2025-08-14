@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Mi Perfil" />
+
+    <item
+        android:id="@+id/nav_postulaciones"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="Postulaciones" />
+
+    <!-- Ítem central: Buscar (sin texto para que no quede detrás del FAB) -->
+    <item
+        android:id="@+id/nav_buscar"
+        android:icon="@drawable/ic_lupa_centrada"
+        android:title="" />
+
+    <item
+        android:id="@+id/nav_ofrecer_trabajo"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Ofrecer" />
+
+    <item
+        android:id="@+id/nav_mis_ofertas"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Mis Ofertas" />
+
+</menu>

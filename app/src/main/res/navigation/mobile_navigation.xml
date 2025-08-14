@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_buscar">
+
+    <!-- 🔹 Buscar Trabajo -->
+    <fragment
+        android:id="@+id/nav_buscar"
+        android:name="com.example.chambafacil.BuscarFragment"
+        android:label="Buscar Trabajo"
+        tools:layout="@layout/fragment_buscar"
+        tools:showIn="@navigation/mobile_navigation" />
+
+    <!-- 🔹 Galería -->
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.chambafacil.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery"
+        tools:showIn="@navigation/mobile_navigation" />
+
+    <!-- 🔹 SlideShow -->
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.chambafacil.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow"
+        tools:showIn="@navigation/mobile_navigation" />
+
+    <!-- 🔹 Ofrecer Trabajo -->
+    <fragment
+        android:id="@+id/nav_ofrecer_trabajo"
+        android:name="com.example.chambafacil.OfrecerTrabajoFragment"
+        android:label="Ofrecer Trabajo"
+        tools:layout="@layout/fragment_ofrecer_trabajo"
+        tools:showIn="@navigation/mobile_navigation" />
+
+    <!-- 🔹 Perfil -->
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.chambafacil.PerfilFragment"
+        android:label="Mi Perfil"
+        tools:layout="@layout/fragment_perfil"
+        tools:showIn="@navigation/mobile_navigation" />
+
+    <!-- 🔹 Mis Postulaciones -->
+    <fragment
+        android:id="@+id/nav_postulaciones"
+        android:name="com.example.chambafacil.ui.slideshow.MisPostulacionesFragment"
+        android:label="Mis Postulaciones"
+        tools:layout="@layout/fragment_mis_postulaciones"
+        tools:showIn="@navigation/mobile_navigation">
+
+        <!-- 🚀 Acción: ir al fragmento de detalle -->
+        <action
+            android:id="@+id/action_nav_postulaciones_to_detallePostulacionFragment"
+            app:destination="@id/nav_detalle_postulacion" />
+    </fragment>
+
+    <!-- 🔹 Resultado de Búsqueda -->
+    <fragment
+        android:id="@+id/nav_resultado"
+        android:name="com.example.chambafacil.BusquedaResultadoFragment"
+        android:label="Resultado"
+        tools:layout="@layout/fragment_busqueda_resultado"
+        tools:showIn="@navigation/mobile_navigation" />
+
+    <!-- 🔹 Perfil Detallado -->
+    <fragment
+        android:id="@+id/nav_perfil_detalle"
+        android:name="com.example.chambafacil.PerfilDetalleFragment"
+        android:label="Perfil Detalle"
+        tools:layout="@layout/fragment_perfil_detalle"
+        tools:showIn="@navigation/mobile_navigation" />
+
+    <!-- 🔹 Mis Ofertas -->
+    <fragment
+        android:id="@+id/nav_mis_ofertas"
+        android:name="com.example.chambafacil.MisOfertasFragment"
+        android:label="Mis Ofertas"
+        tools:layout="@layout/fragment_mis_ofertas"
+        tools:showIn="@navigation/mobile_navigation">
+
+        <action
+            android:id="@+id/action_misOfertasFragment_to_postulantesFragment"
+            app:destination="@id/nav_postulantes" />
+    </fragment>
+
+    <!-- 🔹 Ver Postulantes -->
+    <fragment
+        android:id="@+id/nav_postulantes"
+        android:name="com.example.chambafacil.PostulantesFragment"
+        android:label="Postulantes"
+        tools:layout="@layout/fragment_postulantes"
+        tools:showIn="@navigation/mobile_navigation" />
+
+    <!-- 🔹 Editar Trabajo -->
+    <fragment
+        android:id="@+id/nav_editar_trabajo"
+        android:name="com.example.chambafacil.EditarTrabajoFragment"
+        android:label="Editar Trabajo"
+        tools:layout="@layout/fragment_editar_trabajo"
+        tools:showIn="@navigation/mobile_navigation" />
+
+    <!-- ✅ Detalle de Postulación -->
+    <fragment
+        android:id="@+id/nav_detalle_postulacion"
+        android:name="com.example.chambafacil.DetallePostulacionFragment"
+        android:label="Detalle Postulación"
+        tools:layout="@layout/fragment_detalle_postulacion"
+        tools:showIn="@navigation/mobile_navigation" />
+
+</navigation>

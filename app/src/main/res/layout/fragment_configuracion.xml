@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:divider="@android:color/darker_gray"
+        android:showDividers="middle">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuración"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Switch Notificaciones -->
+        <Switch
+            android:id="@+id/switchNotificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recibir notificaciones"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Switch Modo oscuro -->
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modo oscuro"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Cambiar contraseña -->
+        <TextView
+            android:id="@+id/txtCambiarPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Cambiar contraseña"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título "Acerca de" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acerca de Chamba Fácil"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Texto "Acerca de" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chamba Fácil es una app creada con el objetivo de conectar empleadores y trabajadores de forma ágil, directa y gratuita. Nuestro propósito es brindar oportunidades laborales reales y facilitar la contratación de personal en pocos pasos."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#333333" />
+
+        <!-- Desarrollador -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nDesarrollador: Nicolás Orieta"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="24dp" />
+
+        <!-- Separador visual -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="#DDDDDD" />
+
+        <!-- Título "Política y Privacidad" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Política y Privacidad"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Texto "Política y Privacidad" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En Chamba Fácil respetamos tu privacidad. No compartimos tus datos con terceros. Toda la información se utiliza únicamente para brindarte una mejor experiencia dentro de la aplicación. Podés modificar o eliminar tus datos personales desde tu perfil en cualquier momento."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#333333" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:radius="12dp"
+    card_view:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Fecha -->
+        <TextView
+            android:id="@+id/txtFechaPublicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publicado hace"
+            android:textSize="14sp"
+            android:textColor="#666666" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtTituloTrabajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título del trabajo"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="4dp" />
+
+        <!-- Ubicación -->
+        <TextView
+            android:id="@+id/txtUbicacionTrabajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📌 Pilar"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Sueldo -->
+        <TextView
+            android:id="@+id/txtSueldoTrabajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💰 28000"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Botón Postularme -->
+        <Button
+            android:id="@+id/btnPostularme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POSTULARME"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2196F3" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

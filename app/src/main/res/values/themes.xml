@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base de la app (Material 3, DayNight) -->
+    <style name="Theme.ChambaFacil" parent="Theme.Material3.DayNight">
+        <!-- Colores de marca -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- (Opcional) Status bar -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Estilo por defecto para TextInputLayout/TextInputEditText -->
+        <item name="textInputStyle">@style/Widget.ChambaFacil.TextInputLayout</item>
+        <item name="editTextStyle">@style/Widget.ChambaFacil.TextInputEditText</item>
+    </style>
+
+    <!-- Variante sin ActionBar para actividades con toolbar propia -->
+    <style name="Theme.ChambaFacil.NoActionBar" parent="Theme.ChambaFacil">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Overlays de compatibilidad -->
+    <style name="Theme.ChambaFacil.AppBarOverlay" parent="ThemeOverlay.Material3.ActionBar" />
+    <style name="Theme.ChambaFacil.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
+
+    <!-- ===== Widgets ===== -->
+
+    <!-- TextInputLayout: outlined por defecto -->
+    <style name="Widget.ChambaFacil.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintEnabled">true</item>
+        <item name="android:textColorHint">?attr/colorOnSurfaceVariant</item>
+        <item name="endIconMode">clear_text</item>
+    </style>
+
+    <!-- TextInputEditText base -->
+    <style name="Widget.ChambaFacil.TextInputEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="android:textColorHint">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+</resources>

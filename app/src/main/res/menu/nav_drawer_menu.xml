@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_configuracion"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="Configuración" />
+
+    <item
+        android:id="@+id/nav_acerca"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Informacion de la App" />
+
+
+    <item
+        android:id="@+id/nav_soporte"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Ayuda y soporte" />
+
+    <item
+        android:id="@+id/nav_cerrar_sesion"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Cerrar sesión" />
+
+    <item
+        android:id="@+id/divider"
+        android:title=""
+        android:enabled="false"
+        android:checkable="false"
+        android:icon="@null" />
+
+    <group android:id="@+id/group_cambio_usuario">
+        <item
+        android:id="@+id/nav_cambiar_tipo_usuario"
+            android:icon="@drawable/ic_switch_account"
+            android:title="Cambiar tipo de usuario" />"
+    </group>
+
+</menu>

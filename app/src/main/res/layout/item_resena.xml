@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    android:backgroundTint="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Parte superior: foto y nombre -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <!-- Foto de perfil -->
+            <ImageView
+                android:id="@+id/imgFotoUsuario"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_person"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                android:padding="3dp"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Nombre del usuario -->
+            <TextView
+                android:id="@+id/txtNombreUsuarioResena"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nombre del usuario"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:ellipsize="end"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- Barra de calificación -->
+        <RatingBar
+            android:id="@+id/ratingResena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Comentario -->
+        <TextView
+            android:id="@+id/txtComentarioResena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comentario de ejemplo"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
