@@ -8,3 +8,6 @@ Tecnologías utilizadas
  * Lenguaje de programación: Desarrollado en Java.
  * Entorno de desarrollo: Android Studio.
  * Base de datos: Firebase Firestore para el almacenamiento y gestión de datos.
+
+ * ¡Descarga Changa Fácil en la Play Store!
+La aplicación se encuentra disponible para su descarga en la tienda oficial de Android.
